@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Montserrat:wght@300&family=Rubik+Doodle+Shadow&display=swap');
 @keyframes typing {
     from {
         width:0
@@ -14,32 +13,31 @@
     100% { opacity: 100%; }
 }
 
+@keyframes wiggle {
+    0% { transform: rotate(-5deg); }
+   30% { transform: rotate(5deg); }
+   60% { transform: rotate(-5deg); }
+   100% { transform: rotate(5deg); }
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body, html {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     height: 700px;
-    background-color: rgba(1, 1, 20, 0.971);
+    background-image: url(images/background.jpeg);
     animation-timing-function: cubic-bezier();
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="lightgray" fill="red" width="10px" height="10px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>'), default;
 }
 
 h1, h2 {
-    background: linear-gradient(
-        transparent 0%,
-        transparent 25%,
-        rgb(63, 65, 181) 25%,
-        rgb(63,65,181) 75%,
-        transparent 75%,
-        transparent 100%
-    );
     display: inline;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 5rem;
-    color: rgb(255, 246, 220);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     margin-bottom: 20px;
     animation: typing 3s forwards;
@@ -61,15 +59,14 @@ a {
 }
 
 p, ul {
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    color: rgb(255, 246, 220);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
     font-size: 2.5rem;
     font-style: bold;
 }
 
 .header {
     overflow: hidden;
-    background-color: rgb(210, 218, 240);
     padding: 10px 10px;
     text-align: center;
 }
@@ -83,20 +80,20 @@ p, ul {
 .header a {
     float: left;
     margin-right: 10px;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    color: rgb(63,65,181);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
     font-weight: normal;
     text-align: center;
 }
 
 .header a:hover {
-    color: rgb(13, 16, 56);
+    color: rgba(0, 0, 0, 0.563);
 }
 
 .header a.active {
     font-weight: bold;
-    color: tan;
+    color: rgb(125, 125, 181);
 }
 
 .links {
@@ -161,72 +158,59 @@ p, ul {
     display: inline-block;
 }
 
-.animated {
-    overflow: hidden;
-    border-right: .15em;
-    white-space:normal;
-    font-size:1.6rem;
-    width:0;
-    animation: typing 3s forwards;
+.appears {
+    animation: fadein 3s;
 }
 
 .declaration {
-    background: linear-gradient(
-        transparent 0%,
-        transparent 25%,
-        rgb(63, 65, 181) 25%,
-        rgb(63,65,181) 75%,
-        transparent 75%,
-        transparent 100%
-    );
     display: inline;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 3rem;
-    color: rgb(255, 246, 220);
+    color: rgb(0, 0, 0);
     font-weight: normal; 
     line-height: 50px;
+    margin-left: 2rem;
 }
 
 .welcome {
-    background: linear-gradient(
-        transparent 0%,
-        transparent 25%,
-        rgb(63, 65, 181) 25%,
-        rgb(63,65,181) 75%,
-        transparent 75%,
-        transparent 100%
-    );
     display: inline;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: rgb(255, 246, 220);
+    color: rgb(0, 0, 0);
     font-weight: normal; 
-    line-height: 50px;
+    margin-left: 2rem;
 }
 
 .blurb {
-    background: linear-gradient(
-        transparent 0%,
-        transparent 25%,
-        rgb(63, 65, 181) 25%,
-        rgb(63,65,181) 75%,
-        transparent 75%,
-        transparent 100%
-    );
-    display: inline;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    color: rgb(255, 246, 220);
+    display: block;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
     font-weight: normal; 
-    line-height: 40px;
+    margin-left: 2rem;
 }
 
 .homebutton {
     display: inline;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 3rem;
-    color: rgb(50, 59, 157);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+.icons {
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+}
+.icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+    mix-blend-mode: multiply;
+}
+
+.icon:hover {
+    animation: wiggle .5s;
 }
 
