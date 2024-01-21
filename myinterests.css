@@ -1,0 +1,21 @@
+.crochetphotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sammyphotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.interestssammy {
+    height: 20rem;
+    border-radius: 30px;
+}
+
+.interestssammy:hover {
+    transform: scale(1.01);
+    filter: brightness(95%);
+}
