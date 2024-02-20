@@ -1,5 +1,16 @@
-h2 {
+@keyframes fadein {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+.appears {
+    animation: fadein 3s;
+}
+
+.headers {
     font-size: 3rem;
+    margin-bottom: 0px;
+    font-weight: 600;
 }
 
 .aboutme {
