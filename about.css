@@ -1,5 +1,9 @@
 h2 {
-    
+    font-size: 3rem;
+}
+
+.aboutme {
+    font-size: 2rem;
 }
 
 .updated-when {
@@ -10,4 +14,12 @@ h2 {
 
 .me {
     margin-top: 20px;
+}
+
+.facts {
+    font-size: 2rem;
+}
+
+.doingstuff {
+    font-size: 2rem;
 }

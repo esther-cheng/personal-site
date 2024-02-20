@@ -29,7 +29,7 @@ body, html {
     height: 700px;
     background-image: url(images/background.jpeg);
     animation-timing-function: cubic-bezier();
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="lightgray" fill="red" width="10px" height="10px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>'), default;
+    cursor: url('images/cursor.svg'), auto;
 }
 
 h1, h2 {
