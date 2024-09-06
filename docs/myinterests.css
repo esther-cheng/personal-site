@@ -3,6 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 1vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 
 .sammyphotos {
@@ -11,11 +15,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .interestssammy {
     height: 20rem;
     border-radius: 30px;
+    outline: 4px solid black;
 }
 
 .interestssammy:hover {

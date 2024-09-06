@@ -5,6 +5,7 @@
 
 .appears {
     animation: fadein 3s;
+    padding: 2vw;
 }
 
 .headers {
@@ -19,7 +20,7 @@
 
 .updated-when {
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: white;
 }
 
