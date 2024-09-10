@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.project-container {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 40vh;
+}
+
+.course-advisor-demo {
+    height: 35vh;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.project-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 2vh;
+}
+
+.tools-used {
+    font-size: 25px;
+    font-weight: 350;
+    font-style: italic;
+    margin: 2vh;
+}
+
+.project-blurb {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 300;
+    margin: 2vh;
+    width: 70vw;
+}

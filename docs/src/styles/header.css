@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.header {
+    overflow: hidden;
+    padding: 1vw;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header a {
+    float: left;
+    margin-right: 10px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    text-align: center;
+}
+
+.header a:hover {
+    color: rgba(0, 0, 0, 0.563);
+}
+
+.header a.active {
+    font-weight: 450;
+    color: rgb(125, 125, 181);
+}
+
+.links {
+    float: right;
+    text-decoration: none;
+}
