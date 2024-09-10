@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - release/0.2.x
 
 permissions:
   contents: read
@@ -49,3 +50,4 @@ jobs:
     steps:
       - name: Publish to GitHub Pages 🚀
         id: deployment
+        uses: actions/deploy-pages@v4
