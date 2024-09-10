@@ -21,14 +21,14 @@ export default function Home() {
 
         <div className="icons-container">
           <a href="https://github.com/esther-cheng"
-            ><img src="../img/github.png" className="icon"
+            ><Image src="../img/github.png" alt="github" className="icon"
           /></a>
           <a href="https://www.linkedin.com/in/estcheng/"
-            ><img src="../img/linkedin.png" className="icon"
+            ><Image src="../img/linkedin.png" alt="linkedin" className="icon"
           /></a>
-          <a href="EstherCheng.pdf"><img src="../img/page.png" className="icon" /></a>
+          <a href="EstherCheng.pdf"><Image src="../img/page.png" alt="resume" className="icon" /></a>
           <a href="mailto:esther.cheng@duke.edu"
-            ><img src="../img/email.png" className="icon"
+            ><Image src="../img/email.png" alt="email" className="icon"
           /></a>
         </div>
       </div>
