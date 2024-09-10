@@ -1,2 +1,2 @@
 # personal-site
-Created with CSS and HTML
+Created with CSS and Next.js
