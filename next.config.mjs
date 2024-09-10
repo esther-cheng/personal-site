@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === '/personal-site'
+  basePath: '/personal-site',
+  assetPrefix: "/personal-site"
 };
 
 export default nextConfig;
