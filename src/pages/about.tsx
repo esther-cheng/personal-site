@@ -12,7 +12,7 @@ export default function About() {
         <div className="appears">
             <h2>About Me</h2>
             <Image
-                src="../img/me2023.jpg"
+                src="../personal-site/img/me2023.jpg"
                 alt="A photo of me from November 2023"
                 className="about-photos"
             />
