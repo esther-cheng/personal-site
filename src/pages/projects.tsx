@@ -20,7 +20,7 @@ export default function Projects() {
                     className="course-advisor-demo"
                     />
                     <embed
-                    src="img/me2023.ai-course-onepage.pdf"
+                    src="img/ai-course-onepage.pdf"
                     className="course-advisor-demo"
                     />
                 </div>
