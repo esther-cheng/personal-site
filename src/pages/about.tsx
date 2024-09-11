@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import "../styles/about.css";
 import "../app/globals.css";
 import Header from "../components/header";
@@ -10,7 +9,7 @@ export default function About() {
         <Header activeLink="about"/>
         <div className="appears">
             <h2>About Me</h2>
-            <Image
+            <img
                 src="img/me2023.jpg"
                 alt="A photo of me from November 2023"
                 className="about-photos"
@@ -46,7 +45,7 @@ export default function About() {
                 (PSY103), and Introduction to Cultural Psychology (PSY105).
             </p>
 
-            <Image src="img/sammy_smiling.jpg" alt="A photo of Sammy" className="about-photos" />
+            <img src="img/sammy_smiling.jpg" alt="A photo of Sammy" className="about-photos" />
 
             <h2>Fun Facts</h2>
             <ul className="about-me-blurb">

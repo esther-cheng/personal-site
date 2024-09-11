@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import "../styles/projects.css";
 import "../app/globals.css";
 import Header from "../components/header";
