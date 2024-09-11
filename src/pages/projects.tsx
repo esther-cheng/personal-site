@@ -3,7 +3,6 @@ import Image from "next/image";
 import "../styles/projects.css";
 import "../app/globals.css";
 import Header from "../components/header";
-import {prefix} from "../app/prefix"
 
 export default function Projects() {
   return (
@@ -14,14 +13,14 @@ export default function Projects() {
                 <div className="images-container">
                     <video
                     className="course-advisor-demo"
-                    src={`${prefix}/course-advisor-demo.mov`}
+                    src="img/course-advisor-demo.mov"
                     ></video>
                     <embed
-                    src={`${prefix}/ai-course-poster.pdf`}
+                    src="img/ai-course-poster.pdf"
                     className="course-advisor-demo"
                     />
                     <embed
-                    src={`${prefix}/me2023.ai-course-onepage.pdf`}
+                    src="img/me2023.ai-course-onepage.pdf"
                     className="course-advisor-demo"
                     />
                 </div>

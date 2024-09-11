@@ -3,7 +3,6 @@ import Image from "next/image";
 import "../styles/esthers-site.css";
 import "./globals.css";
 import Header from "../components/header";
-import {prefix} from "../app/prefix"
 
 export default function Home() {
   return (
@@ -25,11 +24,11 @@ export default function Home() {
             ><Image src="img/github.png" alt="github" className="icon"
           /></a>
           <a href="https://www.linkedin.com/in/estcheng/"
-            ><Image src={`${prefix}/linkedin.png`} alt="linkedin" className="icon"
+            ><Image src="img/linkedin.png" alt="linkedin" className="icon"
           /></a>
-          <a href="EstherCheng.pdf"><Image src={`${prefix}/page.png`} alt="resume" className="icon" /></a>
+          <a href="EstherCheng.pdf"><Image src="img/page.png" alt="resume" className="icon" /></a>
           <a href="mailto:esther.cheng@duke.edu"
-            ><Image src={`${prefix}/email.png`} alt="email" className="icon"
+            ><Image src="img/email.png" alt="email" className="icon"
           /></a>
         </div>
       </div>
