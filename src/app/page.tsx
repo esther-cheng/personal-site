@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="icons-container">
           <a href="https://github.com/esther-cheng"
-            ><Image src="personal-site/github.png" alt="github" className="icon"
+            ><Image src="personal-site/img/github.png" alt="github" className="icon"
           /></a>
           <a href="https://www.linkedin.com/in/estcheng/"
             ><Image src={`${prefix}/linkedin.png`} alt="linkedin" className="icon"
