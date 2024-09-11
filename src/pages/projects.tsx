@@ -13,14 +13,14 @@ export default function Projects() {
                 <div className="images-container">
                     <video
                     className="course-advisor-demo"
-                    src="../img/course-advisor-demo.mov"
+                    src="../personal-site/public/img/course-advisor-demo.mov"
                     ></video>
                     <embed
-                    src="../img/ai-course-poster.pdf"
+                    src="../personal-site/public/img/ai-course-poster.pdf"
                     className="course-advisor-demo"
                     />
                     <embed
-                    src="../img/ai-course-onepage.pdf"
+                    src="../personal-site/public/img/ai-course-onepage.pdf"
                     className="course-advisor-demo"
                     />
                 </div>
