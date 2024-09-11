@@ -2,6 +2,7 @@
 import Image from "next/image";
 import "../styles/about.css";
 import "../app/globals.css";
+import {prefix} from "../app/prefix";
 import Header from "../components/header";
 
 export default function About() {
@@ -46,7 +47,7 @@ export default function About() {
                 (PSY103), and Introduction to Cultural Psychology (PSY105).
             </p>
 
-            <Image src="../img/sammy_smiling.jpg" alt="A photo of Sammy" className="about-photos" />
+            <Image src={`${prefix}/sammy_smiling.jpg`} alt="A photo of Sammy" className="about-photos" />
 
             <h2>Fun Facts</h2>
             <ul className="about-me-blurb">
