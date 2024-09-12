@@ -10,17 +10,14 @@ export default function Projects() {
         <div className="appears">
             <div className="project-container">
                 <div className="images-container">
-                    <video
-                    className="course-advisor-demo"
-                    src="img/course-advisor-demo.mov"
-                    ></video>
+                    <iframe src="https://drive.google.com/file/d/1CDa8MJsXw2Z2-CWd-Ap1xEARrrFis3MP/preview" className="course-advisor-demo" allow="autoplay"></iframe>
                     <embed
-                    src="img/ai-course-poster.pdf"
-                    className="course-advisor-demo"
+                        src="img/ai-course-poster.pdf"
+                        className="course-advisor-demo"
                     />
                     <embed
-                    src="img/ai-course-onepage.pdf"
-                    className="course-advisor-demo"
+                        src="img/ai-course-onepage.pdf"
+                        className="course-advisor-demo"
                     />
                 </div>
                 <h3 className="project-title">AI Course Advisor</h3>
