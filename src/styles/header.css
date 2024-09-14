@@ -1,30 +1,51 @@
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     overflow: hidden;
-    padding: 1vw;
     text-align: center;
+    height: 10vh;
 }
 
 a {
     text-decoration: none;
 }
 
+.home {
+    padding: 1vw;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+
+.home-icon {
+    height: 3vh;
+    width: 3vh;
+    cursor: pointer;
+}
+
 .header a {
     float: left;
-    margin-right: 10px;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    padding: 1vw;
+    margin: 2vw;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 1.75vw;
     color: rgb(0, 0, 0);
-    font-weight: 300;
+    font-weight: 350;
     text-align: center;
 }
 
 .header a:hover {
-    color: rgba(0, 0, 0, 0.563);
+    border-radius: 2vh;
+    background-color: #BCD7E3; 
+    transition: background-color .5s ease;
+    cursor: pointer;
 }
 
 .header a.active {
-    font-weight: 450;
-    color: rgb(125, 125, 181);
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+    cursor: pointer;
 }
 
 .links {

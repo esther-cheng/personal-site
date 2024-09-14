@@ -8,21 +8,22 @@ export default function About() {
     <div className="body">
         <Header activeLink="about"/>
         <div className="appears">
-            <h2>About Me</h2>
-            <img
-                src="img/me2024.jpg"
-                alt="A photo of me from November 2023"
-                className="about-photos"
-            />
-            <p className="about-me-blurb">
-                Hello World! I'm Esther, and I'm a current junior at Duke University in
-                Durham, North Carolina. This is my virtual space where I showcase things
-                I'm working on in and outside of class! I am a computer science and
+            <div className="about-container">
+                <img src="img/esther-table.jpg" alt="Me at a restaurant in Chapel Hill" id="table-photo"/>
+                <div className="about-text-container">
+                    <h3 className="about-subtitle"><i>Hello World!</i> I'm Esther, and I'm a current junior at Duke University in
+                Durham, North Carolina.</h3>
+                    <p className="about-me-blurb">I am a computer science and
                 psychology double major who loves to meet people, learn about their
                 interests, and listen to their life stories. I am also an avid crocheter
                 (you can check out some of my projects
-                <a href="myinterests"> here</a>!)
-            </p>
+                <a href="myinterests"> here</a>!)</p>
+                <p className="about-me-blurb">I am currently a student developer at the Duke University Innovation
+                Co-Lab, where I hold office hours and work on exciting projects. This
+                semester, I am working on a Tablet Interface that will help track Co-Lab
+                workshop attendance and participant satisfaction!</p>
+                </div>
+            </div>
 
             <h2>What I'm Doing Now</h2>
             <p className="updated-when">Updated September 6, 2024</p>
