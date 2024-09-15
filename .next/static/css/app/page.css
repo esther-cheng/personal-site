@@ -1,28 +1,32 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 @keyframes fadein {
-  0% { opacity: 0%; }
-  100% { opacity: 100%; }
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to right,#8aaeb1 0%, #8fb4b3 40%, #b4bcb9 80%);
+  background-color: #fffcf7;
   animation-timing-function: cubic-bezier();
-  cursor: url('/public/img/cursor.svg'), auto;
   scroll-behavior: smooth;
+  cursor: auto;
 }
 
 .appears {
-  animation: fadein 3s;
-  padding: 2vw;
+  animation: fadein 2s;
 }
+
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/styles/esthers-site.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
@@ -38,46 +42,101 @@ body {
    100% { transform: rotate(5deg); }
 }
 
-#home {
-    padding: 0vw;
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#home {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.home-page-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
 .welcome-container {
-    margin: 10vh 3vw 0vh 3vw;
+    margin: -5vw 3vw 0vh 6vw;
+    width: 40vw;
     animation: fadein 3s;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-color: transparent;
 }
 
 .welcome-title {
     display: flex;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-family: 'Grandstander', Arial, Helvetica, sans-serif;
     text-align: left;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: rgb(0, 0, 0);
-    font-weight: 325;
-    margin: 0vw 0vw 2.5vw 0vw;
+    font-weight: 600;
+    margin: 0vw 0vw 1vw 0vw;
 }
 
 .welcome-subtitle {
     display: flex;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     text-align: left;
-    font-size: 2.5vw;
+    font-size: 2.75vw;
     color: rgb(0, 0, 0);
-    font-weight: 350;
-    margin: 0vw 0vw 2.5vw 0vw;
+    font-weight: 400;
+    margin: 0vw 0vw 1vw 0vw;
 }
 
 .welcome-blurb {
     display: flex;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     text-align: left;
-    font-size: 3vw;
+    font-size: 2.25vw;
     color: rgb(0, 0, 0);
     font-weight: 350;
-    line-height: 8vh;
     margin: 0vh;
+    width: 26vw;
+}
+
+.home-images-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#blob {
+    position: relative;
+    width: 50vw;
+    bottom: -30vw;
+    right: -2vw;
+    animation: fadein 2s ease, slide-in 2s ease;
+}
+
+#me {
+    position: relative;
+    width: 50vw;
+    bottom: 26vw;
+    right: -2vw;
+    animation: fadein 2s ease, slide-up 2s ease;
 }
 
 .icons-container {
@@ -86,13 +145,13 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 20vw;
-    margin: 3vw;
+    margin: 0vw 0vw 0vw 6vw;
 }
 
 .icon {
-    height: 2rem;
-    width: 2rem;
-    margin: 1rem;
+    height: 3.5vw;
+    width: 3.5vw;
+    margin: 2vw;
     mix-blend-mode: multiply;
 }
 
@@ -115,35 +174,58 @@ body {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/styles/header.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
 .header {
-    overflow: hidden;
-    padding: 1vw;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  height: 10vh;
+  margin-right: 2vw;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.home {
+  padding: 1vw;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+.home-icon {
+  height: 3vh;
+  width: 3vh;
+  cursor: pointer;
 }
 
 .header a {
-    float: left;
-    margin-right: 10px;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    font-weight: 300;
-    text-align: center;
+  float: left;
+  padding: 1vw;
+  margin: 2vw;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 1.75vw;
+  color: rgb(0, 0, 0);
+  font-weight: 350;
+  text-align: center;
 }
 
 .header a:hover {
-    color: rgba(0, 0, 0, 0.563);
+  border-radius: 2vh;
+  background-color: #ffc0a1;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
 }
 
 .header a.active {
-    font-weight: 450;
-    color: rgb(125, 125, 181);
+  text-decoration: underline;
+  text-underline-offset: 1vh;
+  cursor: pointer;
 }
 
 .links {
-    float: right;
-    text-decoration: none;
+  float: right;
+  text-decoration: none;
 }
+

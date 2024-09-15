@@ -10,11 +10,10 @@ interface HeaderProps {
 export default function Header({activeLink}: HeaderProps) {
     return (
           <div className="header">
-            <a href=".">Esther Cheng</a>
+            <a href="." className="home"><img src="img/home.svg" alt="Home" className="home-icon"/></a>
     
             <div className="links">
-                <a href="." className={activeLink=="home" ? "active" : ""}>Home</a>
-                <a href="about" className={activeLink=="about" ? "active" : ""}>About Me</a>
+                <a href="about" className={activeLink=="about" ? "active" : ""}>About</a>
                 <a href="projects" className={activeLink=="projects" ? "active" : ""}>Past Work</a>
                 <a href="myinterests" className={activeLink=="myinterests" ? "active" : ""}>My Interests</a>
             </div>
