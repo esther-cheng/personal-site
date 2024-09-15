@@ -10,7 +10,7 @@ export default function Home() {
       <div className="home-page-container">
         <div className="left">
           <div className="appears">
-          <img src="/img/to-top-right.svg" alt="emphasis lines" className="emphasis-lines"/>
+          <img src="img/to-top-right.svg" alt="emphasis lines" className="emphasis-lines"/>
             <div className="welcome-container">
               <h1 className="welcome-title">Hey! I'm Esther.</h1>
               <h2 className="welcome-subtitle">Welcome to my page.</h2>
