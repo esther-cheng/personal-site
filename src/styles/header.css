@@ -1,54 +1,55 @@
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-    height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  height: 10vh;
+  margin-right: 2vw;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .home {
-    padding: 1vw;
-    border-radius: 2vw;
-    cursor: pointer;
+  padding: 1vw;
+  border-radius: 2vw;
+  cursor: pointer;
 }
 
 .home-icon {
-    height: 3vh;
-    width: 3vh;
-    cursor: pointer;
+  height: 3vh;
+  width: 3vh;
+  cursor: pointer;
 }
 
 .header a {
-    float: left;
-    padding: 1vw;
-    margin: 2vw;
-    font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    font-size: 1.75vw;
-    color: rgb(0, 0, 0);
-    font-weight: 350;
-    text-align: center;
+  float: left;
+  padding: 1vw;
+  margin: 2vw;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 1.75vw;
+  color: rgb(0, 0, 0);
+  font-weight: 350;
+  text-align: center;
 }
 
 .header a:hover {
-    border-radius: 2vh;
-    background-color: #BCD7E3; 
-    transition: background-color .5s ease;
-    cursor: pointer;
+  border-radius: 2vh;
+  background-color: #ffc0a1;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
 }
 
 .header a.active {
-    text-decoration: underline;
-    text-underline-offset: 1vh;
-    cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 1vh;
+  cursor: pointer;
 }
 
 .links {
-    float: right;
-    text-decoration: none;
+  float: right;
+  text-decoration: none;
 }
