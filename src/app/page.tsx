@@ -14,7 +14,7 @@ export default function Home() {
               <h1 className="welcome-title">Hey! I'm Esther.</h1>
               <h2 className="welcome-subtitle">Welcome to my page.</h2>
               <p className="welcome-blurb">
-                I'm a Computer Science and Psychology student at Duke University. In my free time. I like to hang out with my dog and crochet!
+                I'm a Computer Science and Psychology student at Duke University. In my free time, I like to hang out with my dog and crochet!
               </p>
           </div>
         </div>
