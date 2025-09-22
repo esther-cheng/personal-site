@@ -1,3 +1,5 @@
+/* header.css - Updated with responsive hamburger menu */
+
 .header {
   display: flex;
   flex-direction: row;
@@ -7,6 +9,7 @@
   text-align: center;
   height: 10vh;
   margin-right: 2vw;
+  position: relative;
 }
 
 a {
@@ -52,4 +55,131 @@ a {
 .links {
   float: right;
   text-decoration: none;
+  display: flex;
+  gap: 1vw;
+}
+
+/* Hamburger menu styles (hidden by default) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1vw;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 15px 20px;
+  margin: 5px 0;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 8px;
+  float: none;
+}
+
+.mobile-menu a:hover {
+  background-color: #ffc0a1;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .header a {
+    font-size: 2.2vw;
+    margin: 1.5vw;
+    padding: 0.8vw;
+  }
+  
+  .home-icon {
+    height: 4vh;
+    width: 4vh;
+  }
+}
+
+/* Mobile phones - show hamburger menu */
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .header {
+    margin-right: 4vw;
+  }
+  
+  .home-icon {
+    height: 5vh;
+    width: 5vh;
+  }
+}
+
+/* Very small phones */
+@media screen and (max-width: 480px) {
+  .header {
+    height: 8vh;
+    margin-right: 6vw;
+  }
+  
+  .home {
+    padding: 2vw;
+  }
+  
+  .home-icon {
+    height: 6vh;
+    width: 6vh;
+  }
+  
+  .hamburger span {
+    width: 30px;
+    height: 4px;
+  }
+  
+  .mobile-menu {
+    right: 2vw;
+    min-width: 180px;
+  }
 }

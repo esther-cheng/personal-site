@@ -9,15 +9,13 @@ export default function Home() {
       <Header activeLink="home"/>
       <div className="home-page-container">
         <div className="left">
-          <div className="appears">
-          <img src="img/to-top-right.svg" alt="emphasis lines" className="emphasis-lines"/>
+            <img src="img/to-top-right.svg" alt="emphasis lines" className="emphasis-lines"/>
             <div className="welcome-container">
               <h1 className="welcome-title">Hey! I'm Esther.</h1>
               <h2 className="welcome-subtitle">Welcome to my page.</h2>
               <p className="welcome-blurb">
                 I'm a Computer Science and Psychology student at Duke University. In my free time, I like to hang out with my dog and crochet!
               </p>
-          </div>
         </div>
 
         <div className="icons-container">
