@@ -10,7 +10,7 @@ export default function Home() {
       <div className="home-page-container">
         <div className="left">
           <img
-            src="img/to-top-right.svg"
+            src="img/emphasis.png"
             alt="emphasis lines"
             className="emphasis-lines"
           />
@@ -30,7 +30,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/estcheng/">
               <img src="img/linkedin.png" alt="linkedin" className="icon" />
             </a>
-            <a href="/documents/EstherCheng.pdf">
+            <a href="./documents/EstherCheng.pdf">
               <img src="img/page.png" alt="resume" className="icon" />
             </a>
             <a href="mailto:esther.cheng@duke.edu">

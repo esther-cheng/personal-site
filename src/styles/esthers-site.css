@@ -104,11 +104,18 @@
   overflow: hidden;
 }
 
+.left {
+  height: 90vh;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
 .emphasis-lines {
   position: relative;
-  left: 40vw;
-  top: -4vw;
-  height: 3vw;
+  left: 36vw;
+  /* top: -1vw; */
+  height: 10vw;
   animation: splash-grow 0.8s ease-out 1s both;
 }
 
