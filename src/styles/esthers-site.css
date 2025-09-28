@@ -1,5 +1,7 @@
 /* esthers-site.css - Updated with responsive design */
 
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap");
+
 @keyframes fadein {
   0% {
     opacity: 0%;
@@ -215,7 +217,7 @@
 
 /* RESPONSIVE DESIGN */
 
-/* Tablets and smaller laptops */
+/* Large tablets and smaller laptops */
 @media screen and (max-width: 1024px) {
   .welcome-title {
     font-size: 6vw;
@@ -256,12 +258,12 @@
   }
 }
 
-/* Mobile phones */
+/* Tablets */
 @media screen and (max-width: 768px) {
   .home-page-container {
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 15vh;
+    padding-top: 5vh;
   }
 
   .welcome-container {
@@ -283,14 +285,12 @@
 
   .welcome-blurb {
     font-size: 4vw;
-    width: 70vw;
+    width: 60vw;
     text-align: center;
   }
 
   .emphasis-lines {
-    height: 6vw;
-    left: 10vw;
-    top: -2vw;
+    display: none;
   }
 
   .home-images-container {
@@ -323,32 +323,57 @@
   }
 }
 
-/* Very small phones */
+/* Phones */
 @media screen and (max-width: 480px) {
+  .home-page-container {
+    flex-direction: column;
+  }
+
+  .left {
+    height: 35vh;
+    /* z-index: 1; */
+    /* background-color: transparent; */
+    /* position: relative; */
+  }
+
   .welcome-title {
     font-size: 10vw;
+    padding: 5px;
   }
 
   .welcome-subtitle {
     font-size: 7vw;
+    padding: 5px;
   }
 
   .welcome-blurb {
     font-size: 5vw;
-    width: 85vw;
+    width: 60vw;
+    padding: 5px;
   }
 
   .emphasis-lines {
-    height: 8vw;
+    display: none;
   }
 
-  #blob,
+  #blob {
+    width: 150vw;
+    /* bottom: vw; */
+    right: 25vw;
+  }
+
   #me {
-    width: 100vw;
+    width: 150vw;
+    bottom: -2vh;
+    right: -24vw;
+    z-index: 100;
+    position: absolute;
   }
 
   .icons-container {
     width: 70vw;
+    padding: 20px;
+    background-color: transparent;
   }
 
   .icon {
@@ -356,3 +381,55 @@
     width: 10vw;
   }
 }
+
+/* SOCIAL ICON STYLES */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #fffcf7;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.social-icon:hover {
+  background-color: #4869e1;
+  color: white;
+  transform: scale(1.1);
+}
+
+.social-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* EMPHASIS DECORATION */
+.emphasis-decoration {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.6;
+  animation: splash-grow 0.8s ease-out 1s both;
+}
+
+.emphasis-decoration svg {
+  width: 100%;
+  height: 100%;
+  color: #4869e1;
+}
+
+/* BODY RESET */
+/* .body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  background-color: #fffcf7;
+  overflow-x: hidden;
+} */

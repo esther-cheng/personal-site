@@ -9,6 +9,7 @@
   text-align: center;
   height: 10vh;
   margin-right: 2vw;
+  width: 100vw;
   position: relative;
 }
 
@@ -65,6 +66,8 @@ a {
   flex-direction: column;
   cursor: pointer;
   padding: 1vw;
+  position: relative;
+  z-index: 300;
 }
 
 .hamburger span {
@@ -74,6 +77,8 @@ a {
   margin: 3px 0;
   transition: 0.3s;
   border-radius: 2px;
+  position: relative;
+  z-index: 300;
 }
 
 /* Mobile menu styles */
@@ -83,7 +88,7 @@ a {
   top: 100%;
   right: 0;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
   min-width: 200px;
@@ -111,6 +116,7 @@ a {
 /* Hamburger animation when active */
 .hamburger.active span:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: white;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -118,6 +124,7 @@ a {
 }
 
 .hamburger.active span:nth-child(3) {
+  background-color: white;
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
@@ -130,7 +137,7 @@ a {
     margin: 1.5vw;
     padding: 0.8vw;
   }
-  
+
   .home-icon {
     height: 4vh;
     width: 4vh;
@@ -142,15 +149,15 @@ a {
   .links {
     display: none;
   }
-  
+
   .hamburger {
     display: flex;
   }
-  
+
   .header {
     margin-right: 4vw;
   }
-  
+
   .home-icon {
     height: 5vh;
     width: 5vh;
@@ -161,25 +168,56 @@ a {
 @media screen and (max-width: 480px) {
   .header {
     height: 8vh;
-    margin-right: 6vw;
+    width: 90vw;
+    /* margin: 0; */
+    position: relative;
+    justify-content: space-between;
+    align-self: center;
+    justify-self: center;
+    /* margin-right: 6vw; */
   }
-  
+
   .home {
     padding: 2vw;
   }
-  
+
   .home-icon {
-    height: 6vh;
-    width: 6vh;
+    height: 5vh;
+    width: 5vh;
   }
-  
+
   .hamburger span {
     width: 30px;
     height: 4px;
   }
-  
+
   .mobile-menu {
-    right: 2vw;
-    min-width: 180px;
+    position: fixed; /* relative to viewport, not parent */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 200; /* ensure it's above all other layers */
+    /* display: none; default hidden */
+    color: white;
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right;
+    align-items: right;
+    text-align: right; */
+  }
+
+  .mobile-menu a {
+    color: white;
+    font-size: 2rem;
+    /* margin: 1rem 0; */
+    margin: 4rem 3rem 0 0;
+    text-decoration: none;
+    text-align: right;
   }
 }
