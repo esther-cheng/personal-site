@@ -1,0 +1,208 @@
+/* [project]/src/styles/header.css [app-client] (css) */
+.header {
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  margin-right: 2vw;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  cursor: pointer;
+  border-radius: 2vw;
+  padding: 1vw;
+}
+
+.home-icon {
+  cursor: pointer;
+  width: 3vh;
+  height: 3vh;
+}
+
+.header a {
+  float: left;
+  color: #000;
+  text-align: center;
+  margin: 2vw;
+  padding: 1vw;
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  font-size: 1.75vw;
+  font-weight: 350;
+}
+
+.header a:hover {
+  cursor: pointer;
+  background-color: #ffc0a1;
+  border-radius: 2vh;
+  transition: background-color .5s;
+}
+
+.header a.active {
+  text-underline-offset: 1vh;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.links {
+  float: right;
+  gap: 1vw;
+  text-decoration: none;
+  display: flex;
+}
+
+.hamburger {
+  cursor: pointer;
+  z-index: 300;
+  flex-direction: column;
+  padding: 1vw;
+  display: none;
+  position: relative;
+}
+
+.hamburger span {
+  z-index: 300;
+  background-color: #000;
+  border-radius: 2px;
+  width: 25px;
+  height: 3px;
+  margin: 3px 0;
+  transition: all .3s;
+  position: relative;
+}
+
+.mobile-menu {
+  z-index: 1000;
+  background-color: #fff;
+  border-radius: 10px;
+  min-width: 200px;
+  padding: 20px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-menu a {
+  text-align: left;
+  float: none;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 15px 20px;
+  font-size: 18px;
+  display: block;
+}
+
+.mobile-menu a:hover {
+  background-color: #ffc0a1;
+}
+
+.hamburger.active span:first-child {
+  background-color: #fff;
+  transform: rotate(-45deg)translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  background-color: #fff;
+  transform: rotate(45deg)translate(-5px, -6px);
+}
+
+@media screen and (max-width: 1024px) {
+  .header a {
+    margin: 1.5vw;
+    padding: .8vw;
+    font-size: 2.2vw;
+  }
+
+  .home-icon {
+    width: 4vh;
+    height: 4vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header {
+    margin-right: 4vw;
+  }
+
+  .home-icon {
+    width: 5vh;
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    justify-content: space-between;
+    place-self: center;
+    width: 90vw;
+    height: 8vh;
+    position: relative;
+  }
+
+  .home {
+    padding: 2vw;
+  }
+
+  .home-icon {
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .hamburger span {
+    width: 30px;
+    height: 4px;
+  }
+
+  .mobile-menu {
+    z-index: 200;
+    color: #fff;
+    background-color: #000c;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .mobile-menu.active {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .mobile-menu a {
+    color: #fff;
+    text-align: right;
+    margin: 4rem 3rem 0 0;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=src_styles_header_css_bad6b30c._.single.css.map*/
