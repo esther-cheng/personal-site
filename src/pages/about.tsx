@@ -10,7 +10,7 @@ export default function About() {
       <div className="appears">
         <div className="about-container">
           <img
-            src="img/esther-table.jpg"
+            src="/img/esther-table.jpg"
             alt="Me at a restaurant in Chapel Hill"
             id="table-photo"
           />
@@ -61,7 +61,7 @@ export default function About() {
             </p>
           </div>
           <img
-            src="img/esther-gardens.jpg"
+            src="/img/esther-gardens.jpg"
             alt="Me at the Duke Gardens"
             id="gardens-photo"
           />

@@ -23,8 +23,8 @@ export default function Projects() {
               allow="fullscreen"
               id="video"
             ></iframe>
-            <img src="img/poster.png" className="course-advisor-demo" />
-            <img src="img/onepager.png" className="course-advisor-demo" />
+            <img src="/img/poster.png" className="course-advisor-demo" />
+            <img src="/img/onepager.png" className="course-advisor-demo" />
           </div>
           <div className="projects-text-container">
             <h3 className="project-title">AI Course Advisor</h3>

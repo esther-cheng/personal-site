@@ -1,7 +1,7 @@
 "use client";
 import "../styles/esthers-site.css";
 import "./globals.css";
-import Header from "../components/header";
+import Header from "./../components/header";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="home-page-container">
         <div className="left">
           <img
-            src="img/emphasis.png"
+            src="/img/emphasis.png"
             alt="emphasis lines"
             className="emphasis-lines"
           />
@@ -25,23 +25,23 @@ export default function Home() {
 
           <div className="icons-container">
             <a href="https://github.com/esther-cheng">
-              <img src="img/github.png" alt="github" className="icon" />
+              <img src="/img/github.png" alt="github" className="icon" />
             </a>
             <a href="https://www.linkedin.com/in/estcheng/">
-              <img src="img/linkedin.png" alt="linkedin" className="icon" />
+              <img src="/img/linkedin.png" alt="linkedin" className="icon" />
             </a>
-            <a href="./documents/EstherCheng.pdf">
-              <img src="img/page.png" alt="resume" className="icon" />
+            <a href="/documents/EstherCheng.pdf">
+              <img src="/img/page.png" alt="resume" className="icon" />
             </a>
             <a href="mailto:esther.cheng@duke.edu">
-              <img src="img/email.png" alt="email" className="icon" />
+              <img src="/img/email.png" alt="email" className="icon" />
             </a>
           </div>
         </div>
 
         <div className="home-images-container">
-          <img src="img/blob.svg" alt="blob" id="blob" />
-          <img src="img/Esther-Transparent.png" alt="me in 2024" id="me" />
+          <img src="/img/blob.svg" alt="blob" id="blob" />
+          <img src="/img/Esther-Transparent.png" alt="me in 2024" id="me" />
         </div>
       </div>
     </div>
